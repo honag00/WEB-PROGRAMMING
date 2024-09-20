@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  <title>University Finder</title>
+</head>
+
+<body>
+  <header>
+    <div id="navbar">
+      <div id="logo">
+        SIU
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">List</a></li>
+          <li><a href="#">Setting</a></li>
+          <li><a href="#">Morning</a></li>
+        </ul>
+        <form class="search-form">
+          <button>
+            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-labelledby="search">
+              <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <input class="input" placeholder="Search..." required="" type="text">
+          <button class="reset" type="reset">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </form>
+      </nav>
+    </div>
+
+    <div id="login-signup">
+      <nav>
+        <ul>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="login.html">REGISTER</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <input id="register_toggle" type="checkbox">
+      <div class="slider">
+        <form class="form" id="login">
+          <span class="title">Login</span>
+          <div class="form_control">
+            <input required="" class="input" type="text" id="login_username">
+            <label class="label">Username</label>
+          </div>
+          <div class="form_control">
+            <input required="" class="input" type="password" id="login_passwork">
+            <label class="label">Password</label>
+          </div>
+          <button type="click" id="login_button">Login</button>
+
+          <span class="bottom_text">Don't have an account? <label class="swtich" for="register_toggle">Sign Up</label>
+          </span>
+        </form>
+        <form class="form" id="signup">
+          <span class="title">Sign Up</span>
+          <div class="form_control">
+            <input required="" class="input" type="text" id="signup_username">
+            <label class="label">Username</label>
+          </div>
+          <div class="form_control">
+            <input required="" class="input" type="email" id="signup_email">
+            <label class="label">Email</label>
+          </div>
+          <div class="form_control">
+            <input required="" class="input" type="password" id="signup_passwork1">
+            <label class="label">Password</label>
+          </div>
+          <div class="form_control">
+            <input required="" class="input" type="password" id="signup_passwork2">
+            <label class="label">Confirm Password</label>
+          </div>
+          <button type="click" id="signup_button">Sign Up</button>
+
+          <span class="bottom_text">Already have an account? <label class="swtich" for="register_toggle">Sign In</label>
+          </span>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="bottom">
+      <div class="Account settings">
+        <h3>Account settings</h3>
+      </div>
+      <div class="issue">
+        <h3>Wallet issues</h3>
+      </div>
+      <div class="FAQ">
+        <h3>FAQ</h3>
+      </div>
+      <div class="payment">
+        <h3>Convenient payment</h3>
+      </div>
+      <div class="qr">
+        <h3>UNI APP</h3>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<script src="login.js"></script>
+</html>
+Footer
+© 2023 GitHub, Inc.

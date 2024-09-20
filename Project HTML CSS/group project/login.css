@@ -1,0 +1,289 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: #171a1c;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: #1d2e37;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffef;
+    margin: 0 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+}
+
+#logo {
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+#logo:hover {
+    background-color: #ea68a3;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+}
+
+/* styling of whole input container */
+.search-form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg, #fff);
+}
+
+/* styling of Input */
+.search-form .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+
+/* styling of animated border */
+.search-form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+}
+
+/* Hover on Input */
+.search-form:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+input:focus {
+    outline: none;
+}
+
+/* here is code of animated border */
+.search-form:focus-within:before {
+    transform: scale(1);
+}
+
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* close button shown when typing */
+input:not(:placeholder-shown)~.reset {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* sizing svg icons */
+.search-form svg {
+    width: 17px;
+    margin-top: 3px;
+}
+
+
+
+
+/* MAIN */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    color: #fff;
+}
+
+main .container {
+    width: 450px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+}
+
+main .container .slider {
+    width: 200%;
+    position: relative;
+    transition: transform ease-out 0.3s;
+    display: flex;
+}
+
+main #register_toggle {
+    display: none;
+}
+
+main .container #register_toggle:checked+.slider {
+    transform: translateX(-50%);
+}
+
+main .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 1.5em 3em;
+    width: 90%;
+    height: 60vh;
+}
+
+main .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+main form .form_control {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+main form .form_control .label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transition: transform ease 0.2s;
+    transform: translate(0%, -50%);
+    font-size: 1.75em;
+    user-select: none;
+    pointer-events: none;
+    color: #b0b0b0;
+}
+
+main form .form_control .input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.75rem;
+    border-radius: 5px;
+    transition: box-shadow ease 0.2s;
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+}
+
+main form .form_control .input:focus,
+main form .form_control .input:valid {
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e;
+}
+
+main form .form_control .input:focus+.label,
+main form .form_control .input:valid+.label {
+    transform: translate(-150%, -50%);
+}
+
+main form button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.75rem;
+    border-radius: 5px;
+    transition: box-shadow ease 0.1s;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+}
+
+main form button:active {
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e;
+}
+
+main .bottom_text {
+    font-size: 1.65em;
+}
+
+main .bottom_text .swtich {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #1d2e37;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 {
+    color: #e9d8a6;
+}
+
+img.peguin{
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+}

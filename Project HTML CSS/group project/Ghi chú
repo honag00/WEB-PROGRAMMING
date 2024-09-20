@@ -1,0 +1,67 @@
+Ghi chú thay đổi trong code
+
+T4 - 1/3: HTMLvà CSS làm header và footer. Main chứa search và hiện thông tin, Hoàng đang chế biến!
+
+T5 - 2/3: Tiến thêm vào phần JS trong main.js
+
+CN - 5/3: Tiến thêm login.js (Cần thảo luận về html để apply js vào)
+
+T4 - 8/3: Phú thêm login.html và login.css
+
+T4 - 8/3: đại ca quận 7 thêm search-form và có chế trong main 
+(recommend trường nào, đang chuẩn bị đưa hình trường và chèn link trường vào) trong index.html, 
+style.css có add mấy cái search-from cần và card trường (cần trang trí) 
+
+T6 - 10/3: đại ca quận 7 chia phần main ra làm 3 body, recent đang dự tính đổi sang random trường như
+tinder nhưng còn lỗi nhiều nên vẫn giữ cái cũ (body1), giữa main có thêm top 5 các trường đh, thông tin
+về website tìm trường, dịch vụ vip của website (body2), body3 vẫn chưa thêm gì. body2 vẫn chưa chỉnh sửa xong
+
+T6 - 10/3: Tiến đã cập nhật pagination và chỉnh sửa API part ở main.js (Team html hãy xem và cập nhật)
+
+T7 - 11/3: Tiến add ảnh đại diện vào img (CanhCut.png) && up file Z.zip (file login),hãy xem thử
+
+CN - 12/3: Phú sửa lại phần login.hrml và login.css vì 1 số lỗi ngoài ý muốn :))
+
+T2 - 13/3: Bi thêm 2 phần login và css , vẫn còn bug chưa hoàn thiện
+
+T2 - 13/3: Phú sửa lại toàn bộ form login trong html và css, thêm phần register
+
+T4 -15/3: Bi làm thêm những phần đăng nhập và đăng ký, còn điều kiện lỗi chưa thêm quá nhiều và vụ đăng nhập vô có userimg hình con cánh cụt thì đéo biết làm
+
+T4 - 15/3: Đã sửa con cánh cụt trong login.js và css (abi phế vl) + Đã sửa login.js => login sẽ suất ra ảnh cánh cụt và tên username (Dũng ngố)
+
+T7 - 18/3: Update + Delete index.html, css.html, main.js (Code kiểu gì v ?) --> Upload file Project_Final.rar
+          --> Delete + Close main part + Close search -> recode tạm thời + thêm Search + Button + Alert
+          --> Delete all API --> Tạo API mới
+          --> Recode API part (Người phụ trách mảng này add code kiểu gì v ?)
+          --> Add select countries list
+          --> Update Display Function, Pagination
+          --> Recode Pagination --> Results sẽ có 6 data
+          --> Add Chuyển đổi dữ liệu
+          --> Đã test đăng nhập thành công và search được dữ liệu nhưng còn vài lỗi:
+                + Không log out được account, refresh lại trang vẫn sẽ lưu dữ liệu user + ảnh
+                + Phần Paginations chưa tối ưu --> click new page sẽ tốn vài thời gian để load dữ liệu kế tiếp (API có nhiều dữ liệu sẽ output lâu hơn)
+          PS: Upload file trc có thời gian sẽ cập nhật + recode tạm thời nên team HTML chỉnh lại cho đẹp
+          New: Upload Final_Project v2
+                
+CN - 19/3: đã chỉnh footer trong main, phần connect with us cần sửa font cho giống 3 cái còn lại + canh đều (up trong file v3)
+
+CN - 19/3: có chỉnh sửa trong file v3 (câu văn, header, footer)
+
+CN - 19/3: Abi sửa lại phần login và resgister, log out dựa trên file_zip của tiến
+
+T2 - 20/3: Upload file Final_Project v4.0 
+          --> Dữ liệu sẽ xuất ra 12 results (1 cột: 6 results)
+          --> Chỉnh sửa style.css --> Text + dự liệu căn giữa cho đẹp
+          --> Lỗi: Kq có trên 500 results sẽ xuất hiện hiện tượng tràng pages nếu muốn chọn page 1 hoặc 2 buộc phải thu nhỏ
+          New: Upload v4.0.1 --> Dữ liệu sẽ xuất ra 30 results (1 cột: 15 results) --> Tầm dưới 1000 results sẽ không bị tràng trang
+          PS: Đừng chọn United State rồi nhập tên nước (4562 result(s) Found!) --> Vote xóa US
+          
+          New: Upload v4.0.2 --> US is contraband --> Delete everything relate to Country United States
+          Lỗi: Tạm thời không còn lỗi tràng pages
+          
+T2 - 20/3: Phú cập nhật lại 3 flie index.html, style.css và main.js theo yêu cầu nhóm
+
+T3 - 21/3: Upload file v7.0 --> Fix lỗi: pagination xuất dữ liệu không chính xác + Chỉnh lại hướng dẫn
+
+T3 - 28/3: Update Home and About v8.0
