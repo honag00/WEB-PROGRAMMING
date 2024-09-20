@@ -1,0 +1,24 @@
+
+23/6 - Phú: Tạo cơ bản mặt web, có header, footer, css và homepage
+
+24/6 - Phú: Thêm file Controller (Controller.php, Homepage.php), core(db.php, Router.php, web.php), middleware(CSRF.php) 
+            sửa lại file pages (nhét file include và styles.css vào chung) và sửa lại file index.php 
+
+25/6 - Phú: kết nối homepage và contact (sửa index.php và web.php)
+
+26/6 - Phú: tạo UserController.php, User.php, tạo 2 trang sign-in.php và sign-up.php (đã kết nối với nhau)
+
+27/6 - dũng: update lại các file sign up sign in User.php index.php , folder core nhớ đổi tên thành Core, nhớ ghi đúng tên file và folder
+27/6 - Honag: up file 404.php và 403.php
+27/6 - Phú: Làm phần post đc 70%, pre-loading screen
+
+28/6 - honag: update file header.php (login logout)
+
+29/6 - phú: làm hoàn thành phần blog.php
+29/6 - honag: chỉnh 403 và 404, sign up thì máy honag tự chuyển hướng sang 403 nên cần cứu
+30/6 - honag: đã add file profile(php,css), đang chỉnh sửa
+
+2/7 - Phú: sửa phần validLogin trong user controller, sửa trong post.php để thêm đc ảnh vào blog
+5/7 - honag: thêm warning nếu login sai username hoặc password
+7-7 - bi: thêm các phần liên quan đến edit,show profile và fix các bug
+7/7 - phú: làm được phần comment, đã làm được post comment lên php, nhưng phần hiện comment vẫn không hiện ra được
